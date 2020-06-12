@@ -189,6 +189,12 @@ public class User implements IProfile {
         this.friends = friends;
     }
 
+     public void setAnonymous() {
+        this.username = " ";
+        this.firstName = " ";
+        this.lastName = " ";
+        this.password = " ";
+    }
     @Override
     public void showFriends() {
         System.out.println("The friends of " + this.username + " are following:");
